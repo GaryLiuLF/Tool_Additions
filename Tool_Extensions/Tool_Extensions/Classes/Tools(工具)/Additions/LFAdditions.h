@@ -15,3 +15,5 @@
 #import "UIButton+LFAddition.h"
 #import "NSString+LFAddition.h"
 #import "UIViewController+LFAddition.h"
+#import "UIApplication+LFAddition.h"
+#import "UIImageView+LFAddition.h"

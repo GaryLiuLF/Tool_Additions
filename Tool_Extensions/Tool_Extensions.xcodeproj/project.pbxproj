@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DA05531E1B8D840054CDDE /* UIApplication+LFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA05501E1B8D840054CDDE /* UIApplication+LFAddition.m */; };
+		18DA05541E1B8D840054CDDE /* UIImageView+LFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA05521E1B8D840054CDDE /* UIImageView+LFAddition.m */; };
 		EB668E231E13A25B00A53006 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB668E221E13A25B00A53006 /* main.m */; };
 		EB668E261E13A25B00A53006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB668E251E13A25B00A53006 /* AppDelegate.m */; };
 		EB668E2E1E13A25B00A53006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB668E2D1E13A25B00A53006 /* Assets.xcassets */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18DA054F1E1B8D840054CDDE /* UIApplication+LFAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LFAddition.h"; sourceTree = "<group>"; };
+		18DA05501E1B8D840054CDDE /* UIApplication+LFAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LFAddition.m"; sourceTree = "<group>"; };
+		18DA05511E1B8D840054CDDE /* UIImageView+LFAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LFAddition.h"; sourceTree = "<group>"; };
+		18DA05521E1B8D840054CDDE /* UIImageView+LFAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LFAddition.m"; sourceTree = "<group>"; };
 		EB668E1E1E13A25B00A53006 /* Tool_Extensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tool_Extensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB668E221E13A25B00A53006 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB668E241E13A25B00A53006 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -253,6 +259,10 @@
 				EB668EA91E14D75800A53006 /* NSObject+LFAddition.m */,
 				EB668EAB1E14DFED00A53006 /* NSBundle+LFAddition.h */,
 				EB668EAC1E14DFED00A53006 /* NSBundle+LFAddition.m */,
+				18DA054F1E1B8D840054CDDE /* UIApplication+LFAddition.h */,
+				18DA05501E1B8D840054CDDE /* UIApplication+LFAddition.m */,
+				18DA05511E1B8D840054CDDE /* UIImageView+LFAddition.h */,
+				18DA05521E1B8D840054CDDE /* UIImageView+LFAddition.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -397,8 +407,10 @@
 				EB668EAA1E14D75800A53006 /* NSObject+LFAddition.m in Sources */,
 				EB668E5D1E13A3DB00A53006 /* DemoViewController.m in Sources */,
 				EB668EB31E14FE4B00A53006 /* UIViewController+LFAddition.m in Sources */,
+				18DA05531E1B8D840054CDDE /* UIApplication+LFAddition.m in Sources */,
 				EB668E9B1E14A38400A53006 /* UIColor+LFAddition.m in Sources */,
 				EB668EAD1E14DFED00A53006 /* NSBundle+LFAddition.m in Sources */,
+				18DA05541E1B8D840054CDDE /* UIImageView+LFAddition.m in Sources */,
 				EB668EA11E14B2C400A53006 /* UIScreen+LFAddition.m in Sources */,
 				EB668E651E13A74D00A53006 /* NSArray+Log.m in Sources */,
 				EB668E261E13A25B00A53006 /* AppDelegate.m in Sources */,
