@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self getDirPath];
+    [self getIphoneTypeInfo];
 }
 
 // MARK: - 打印 NSArray & NSDictionary 的内容
@@ -93,7 +93,7 @@
 
 // MARK: - 获取 BunldInfo
 - (void)getBunldInfo {
-    NSLog(@"%@, %@", NSBundle.getUUID, [NSBundle getNamespace]);
+    NSLog(@"%@, %@, %@", NSBundle.getUUID, [NSBundle getNamespace], [NSBundle mainBundle].infoDictionary);
 }
 
 // MARK: - UserDefaults 存取数据
@@ -116,6 +116,11 @@
     
     NSLog(@"path3 = %@",[NSString lf_appendDirWithDirType:TempDirType subPath:subPath]);
     
+}
+
+// MARK: - 获取设备信息
+- (void)getIphoneTypeInfo {
+    NSLog(@"%@",[UIDevice currentDevice].model);
 }
 
 
