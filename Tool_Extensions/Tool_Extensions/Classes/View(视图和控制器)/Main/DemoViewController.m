@@ -74,12 +74,12 @@
 // MARK: - 创建按键
 - (void)setupButton {
     
-    UIButton *btn1 = [UIButton lf_textButton:@"我只是安静的按钮" fontSize:14 normalColor:[UIColor orangeColor] highlightedColor:[UIColor whiteColor]];
+    UIButton *btn1 = [UIButton lf_textButton:@"我只是安静的按钮" fontSize:14 normalColor:[UIColor orangeColor] highlightedColor:[UIColor whiteColor] isRadius:true];
     btn1.frame = CGRectMake(20, 20, CGRectGetWidth(btn1.frame), CGRectGetHeight(btn1.frame));
     btn1.backgroundColor = [UIColor greenColor];
     [self.view addSubview:btn1];
     
-    UIButton *btn2 = [UIButton lf_textImageOfButton:@"返回" fontSize:14 normalColor:[UIColor orangeColor] highlightedColor:[UIColor redColor] bgImageName:@"navigationbar_back_withtext"];
+    UIButton *btn2 = [UIButton lf_textImageOfButton:@"返回" fontSize:14 normalColor:[UIColor orangeColor] highlightedColor:[UIColor redColor] bgImageName:@"navigationbar_back_withtext" isRadius:true];
     btn2.frame = CGRectMake(20, 60, CGRectGetWidth(btn2.frame), CGRectGetHeight(btn2.frame));
     btn2.backgroundColor = [UIColor greenColor];
     [self.view addSubview:btn2];
@@ -88,20 +88,20 @@
 
 // MARK: - 是否为空
 - (void)isEmpty {
-    NSLog(@"%d, %d, %d",[NSObject isEmpty:[NSNull null]], [NSObject isEmpty:@"1"], [NSObject isEmpty:nil]);
+    NSLog(@"%d, %d, %d",[NSObject lf_isEmpty:[NSNull null]], [NSObject lf_isEmpty:@"1"], [NSObject lf_isEmpty:nil]);
 }
 
 // MARK: - 获取 BunldInfo
 - (void)getBunldInfo {
-    NSLog(@"%@, %@, %@", NSBundle.getUUID, [NSBundle getNamespace], [NSBundle mainBundle].infoDictionary);
+    NSLog(@"%@, %@, %@", NSBundle.lf_getUUID, [NSBundle lf_getNamespace], [NSBundle mainBundle].infoDictionary);
 }
 
 // MARK: - UserDefaults 存取数据
 - (void)setupUserdefaults {
     
     NSArray *array = @[@"1", @"2", @"3"];
-    [array saveToUserDefaultsWithKey:@"array"];
-    NSLog(@"array = %@",[NSObject getFromUserDefaultsWithKey:@"array"]);
+    [array lf_saveToUserDefaultsWithKey:@"array"];
+    NSLog(@"array = %@",[NSObject lf_getFromUserDefaultsWithKey:@"array"]);
 }
 
 // MARK: - 获取路径

@@ -15,13 +15,13 @@
 
  @return UUID
  */
-+ (NSString *)getUUID;
++ (NSString *)lf_getUUID;
 
 /**
  获取命名空间
 
  @return 命名空间
  */
-+ (NSString *)getNamespace;
++ (NSString *)lf_getNamespace;
 
 @end

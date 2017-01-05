@@ -11,12 +11,12 @@
 @implementation NSString (LFAddition)
 
 // MARK: - 生成类型文本
-+ (instancetype)showContentByType:(NSString *)type content:(NSString *)content {
++ (instancetype)lf_showContentByType:(NSString *)type content:(NSString *)content {
     return [NSString stringWithFormat:@"%@:%@", type, content];
 }
 
 // MARK: - 拼接字符串
-- (instancetype)addString:(NSString *)subString isBlank:(BOOL)isBlank {
+- (instancetype)lf_addString:(NSString *)subString isBlank:(BOOL)isBlank {
     if (isBlank) {
         return [NSString stringWithFormat:@"%@ %@", self, subString];
     }

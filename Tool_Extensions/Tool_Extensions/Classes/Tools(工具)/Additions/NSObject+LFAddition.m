@@ -11,7 +11,7 @@
 @implementation NSObject (LFAddition)
 
 // MARK: - 判断是否为空
-+ (BOOL)isEmpty:(id)object {
++ (BOOL)lf_isEmpty:(id)object {
   
     BOOL isEmpty = false;
     
@@ -27,11 +27,11 @@
 }
 
 // MARK: - UserDefaults 存取数据
-- (void)saveToUserDefaultsWithKey:(id)key {
+- (void)lf_saveToUserDefaultsWithKey:(id)key {
     [[NSUserDefaults standardUserDefaults]setObject:self forKey:key];
 }
 
-+ (id)getFromUserDefaultsWithKey:(id)key {
++ (id)lf_getFromUserDefaultsWithKey:(id)key {
     return [[NSUserDefaults standardUserDefaults]objectForKey:key];
 }
 

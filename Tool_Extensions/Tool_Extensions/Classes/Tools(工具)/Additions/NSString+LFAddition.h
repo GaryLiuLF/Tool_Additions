@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, DirType) {
  @param content 文本
  @return NSSting
  */
-+ (instancetype)showContentByType:(NSString *)type
++ (instancetype)lf_showContentByType:(NSString *)type
                           content:(NSString *)content;
 
 /**
@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, DirType) {
  @param isBlank 中间是否为空
  @return String
  */
-- (instancetype)addString:(NSString *)subString
+- (instancetype)lf_addString:(NSString *)subString
                   isBlank:(BOOL)isBlank;
 
 
