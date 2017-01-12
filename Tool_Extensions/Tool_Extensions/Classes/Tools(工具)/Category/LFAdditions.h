@@ -8,6 +8,7 @@
 
 
 // MARK: - 头文件
+#import "UIView+LFAddition.h"
 #import "NSAttributedString+LFAddition.h"
 #import "UIColor+LFAddition.h"
 #import "UILabel+LFAddition.h"
@@ -20,6 +21,7 @@
 #import "UIApplication+LFAddition.h"
 #import "UIImageView+LFAddition.h"
 #import "UIDevice+LFAddition.h"
+#import "UIImage+LFAddition.h"
 
 // MARK: - 屏幕尺寸
 #define Screen_width        [UIScreen mainScreen].bounds.size.width

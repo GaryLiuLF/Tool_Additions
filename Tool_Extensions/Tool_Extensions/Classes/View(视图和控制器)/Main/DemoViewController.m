@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self getIphoneTypeInfo];
+    [self createBlurImage];
 }
 
 // MARK: - 打印 NSArray & NSDictionary 的内容
@@ -121,6 +121,26 @@
 // MARK: - 获取设备信息
 - (void)getIphoneTypeInfo {
     NSLog(@"%@",[UIDevice currentDevice].model);
+}
+
+- (void)createBlurImage {
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 100, 100)];
+    UIImage *image1 = [UIImage lf_imageWithColor:[UIColor redColor] size:CGSizeMake(100, 100)];
+    imageView.image= image1;
+    [self.view addSubview:imageView];
+    
+    UIImageView *imageView1 = [[UIImageView alloc]initWithFrame:CGRectMake(10, 150, 100, 100)];
+    imageView1.image= [[UIImage imageNamed:@"thing05"] lf_coreImageBlurNumber:10];
+    [self.view addSubview:imageView1];
+    
+    NSLog(@"%lf",UIImageJPEGRepresentation([UIImage imageNamed:@"thing05"], 1.0).length / 1024.0);
+    
+    UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(10, 300, 100, 100)];
+    imageView2.image= [[UIImage imageNamed:@"thing05"] lf_boxblurWithBlurNumber:-100];
+    [self.view addSubview:imageView2];
+    
+    
 }
 
 

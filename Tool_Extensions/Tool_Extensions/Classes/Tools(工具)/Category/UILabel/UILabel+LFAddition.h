@@ -24,4 +24,18 @@
                         fontSize:(CGFloat)fontSize
                           isBold:(BOOL)isBold;
 
+/**
+ 固定高度，获取宽度
+
+ @return 宽度
+ */
+- (CGFloat)lf_getTextWidth;
+
+/**
+ 固定宽度，获取高度
+
+ @return 高度
+ */
+- (CGFloat)lf_getTextHeight;
+
 @end

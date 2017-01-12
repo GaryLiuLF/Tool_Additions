@@ -31,4 +31,16 @@
     return lab;
 }
 
+// MARK: - 固定高度，获取宽度
+- (CGFloat)lf_getTextWidth {
+    CGSize newSize = [self.text boundingRectWithSize:CGSizeMake(MAXFLOAT, self.frame.size.height) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil].size;
+    return newSize.width;
+}
+
+// MARK: - 固定宽度，获取宽度
+- (CGFloat)lf_getTextHeight {
+    CGSize newSize = [self.text boundingRectWithSize:CGSizeMake(self.frame.size.width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil].size;
+    return newSize.height;
+}
+
 @end
